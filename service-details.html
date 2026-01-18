@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الخدمة | مؤسسة حدائق العشب</title>
+    <!-- الأيقونات والخطوط -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class="details-hero" id="serviceHero">
+        <div class="hero-content">
+            <h1 id="serviceTitle">تحميل الخدمة...</h1>
+            <div class="breadcrumb">مؤسسة حدائق العشب <i class="fas fa-chevron-left"></i> <span id="breadcrumbTitle">الخدمات</span></div>
+        </div>
+    </section>
+    <section class="info-section">
+        <div class="info-container">
+            <div class="info-text">
+                <h2>نظرة عامة على الخدمة</h2>
+                <p id="serviceDesc">هنا سيظهر وصف الخدمة بالتفصيل...</p>
+                
+                <div class="cta-box">
+                    <h3>هل أنت مستعد لبدء مشروعك؟</h3>
+                    <p>تواصل معنا الآن للحصول على استشارة مجانية ومعاينة لموقعك.</p><br>
+                    <a href="tel:0556123207" class="call-now-btn"><i class="fas fa-phone-alt"></i> اتصل الآن: 0556123207</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video-section">
+        <h2 class="section-title">فيديوهات من واقع عملنا</h2>
+        <div class="video-grid" id="videoGrid">
+        </div>
+    </section>
+    <section class="gallery-section">
+        <h2 class="section-title">معرض الصور</h2>
+        <div class="gallery-grid" id="galleryGrid">
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- العمود الأول: عن الشركة -->
+                <div class="footer-col about-col">
+                    <div class="footer-logo">
+                        <img src="images/logo-removebg-preview (1).png" alt="حدائق العشب">
+                        <h3>تنسيق حدائق و مظلات بالرياض </h3>
+                    </div>
+                    <p>مؤسسة حدائق العشب للديكور والمقاولات، رواد تنسيق الحدائق في الرياض. نحن نصنع الجمال ونحول المساحات الخارجية إلى جنات منزلية بأحدث التصاميم وأجود الخامات العالمية.</p>
+                </div>
+
+                <!-- العمود الثاني: روابط سريعة -->
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                        <li><a href="index.html#services"><i class="fas fa-chevron-left"></i> خدماتنا</a></li>
+                        <li><a href="index.html#why-choose-us"><i class="fas fa-chevron-left"></i> لماذا نحن</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-left"></i> تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- العمود الثالث: بيانات التواصل -->
+                <div class="footer-col contact-col">
+                    <h4>بيانات التواصل</h4>
+                    <div class="contact-info">
+                        <a href="tel:0556123207"><i class="fas fa-phone-alt"></i> 0556123207</a>
+                        <a href="https://wa.me/966556123207" target="_blank"><i class="fab fa-whatsapp"></i> واتساب: 0556123207</a>
+                        <a href="https://www.instagram.com/goal_art2030?igsh=OWplMjF" target="_blank"><i class="fab fa-instagram"></i> انستجرام: goal_art2030</a>
+                        <p><i class="fas fa-map-marker-alt"></i> الرياض - المملكة العربية السعودية</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2026 لمؤسسة حدائق العشب</p>
+                <div class="dev-credit">
+                    تصميم وبرمجة <a href="https://www.facebook.com/share/17UzqgSwiu/" target="_blank">GMTWeb</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- الأزرار العائمة (Floating Action Buttons) -->
+    <div class="floating-btns">
+        <a href="https://wa.me/966556123207" class="float-btn whatsapp-float" target="_blank" title="تواصل عبر واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:0556123207" class="float-btn call-float" title="اتصل بنا الآن">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+    <script>
+        const servicesData = {
+            'waterfalls': {
+                title: 'الشلالات والنوافير',
+                desc: 'تعتبر الشلالات والنوافير من أرقى العناصر الجمالية التي يمكن إضافتها لحديقتك. في مؤسسة حدائق العشب، نتميز بتصميم وتنفيذ شلالات جدارية ومنزلية تعتمد على أنظمة ضخ صامتة وفلاتر متطورة لضمان نقاء المياه. ندمج الإضاءة المخفية تحت الماء لتخلق لوحة فنية ساحرة في المساء، مع استخدام خامات طبيعية وصناعية تقاوم الأملاح والرطوبة وتدوم لسنوات طويلة.',
+                heroImg: 'images/IMG_20260118_164451.jpg',
+                videos: ['videos/instagram_1768747600004.mp4', 'videos/VID-20260118-WA0001.mp4'],
+                images: ['images/IMG_20260118_164451.jpg', 'images/IMG_20260118_164505.jpg', 'images/IMG_20260118_164524.jpg', 'images/IMG_20260118_164538.jpg']
+            },
+            'umbrellas': {
+                title: 'المظلات والبرجولات',
+                desc: 'نقدم حلول تظليل مبتكرة تجمع بين القوة والتصميم العصري. سواء كنت تبحث عن مظلات حديدية متينة بمظهر خشبي، أو برجولات خشبية معالجة ضد التسوس والشمس، فإننا نوفر لك تشكيلة واسعة تناسب الجلسات العائلية ومواقف السيارات. مظلاتنا مصممة لتحمل الرياح القوية ودرجات الحرارة العالية في الرياض، مع إمكانية إضافة سواتر جانبية وإضاءات ليد مدمجة.',
+                heroImg: 'images/IMG-20260118-WA0007.jpg',
+                videos: ['videos/VID-20260118-WA0033.mp4', 'videos/VID-20260118-WA0043.mp4'],
+                images: ['images/IMG-20260118-WA0017.jpg', 'images/IMG-20260118-WA0032.jpg', 'images/IMG-20260118-WA0038.jpg','images/IMG-20260118-WA0036.jpg']
+            },
+            'glass-rooms': {
+                title: 'الغرف الزجاجية',
+                desc: 'الغرف الزجاجية (Sunrooms) هي الحل الأمثل للاستمتاع بجمال حديقتك في كل فصول السنة، بعيداً عن الحرارة والغبار. نستخدم زجاجاً مزدوجاً (Double Glass) عازلاً للحرارة والصوت مع قطاعات ألمنيوم وفولاذ قوية جداً. تصميماتنا توفر لك إطلالة بانورامية كاملة 360 درجة، مع سقف زجاجي أو معزول حسب اختيارك، لتكون غرفة معيشة إضافية فاخرة داخل حديقتك.',
+                heroImg: 'images/IMG-20260118-WA0025.jpg',
+                videos: ['videos/VID-20260118-WA0042.mp4', 'videos/VID-20260118-WA0054.mp4'],
+                images: ['images/IMG-20260118-WA0015.jpg', 'images/IMG-20260118-WA0025.jpg', 'images/IMG-20260118-WA0028.jpg', 'images/IMG-20260118-WA0046.jpg']
+            },
+            'seating': {
+                title: 'الأحواض والجلسات',
+                desc: 'نحن نصنع لك زوايا مريحة داخل حديقتك من خلال تنفيذ الدقات الأرضية المرتفعة والجلسات المبنية المدمجة مع الأحواض الزراعية. نستخدم مواد عالية الجودة وتصاميم هندسية تضمن استغلال كل زاوية في المساحة المتوفرة لديك. الأحواض يتم عزلها مائياً بشكل كامل لحماية الأرضيات، مع تنسيق زهور ونباتات تضفي حيوية وجمالاً على الجلسة.',
+                heroImg: 'images/IMG-20260118-WA0014.jpg',
+                videos: ['videos/VID-20260118-WA0051.mp4', 'videos/VID-20260118-WA0009.mp4'],
+                images: ['images/IMG-20260118-WA0010.jpg', 'images/IMG-20260118-WA0014.jpg', 'images/IMG-20260118-WA0019.jpg', 'images/IMG-20260118-WA0032.jpg']
+            },
+            'cladding': {
+                title: 'التكسيات الخشبية',
+                desc: 'التكسيات الخشبية (WPC) أو الخشب المعالج هي سر الفخامة في الديكور الخارجي الحديث. نقوم بتركيب تكسيات الجدران والأسقف التي تعطي مظهراً دافئاً وفخماً يشبه الخشب الطبيعي ولكن بدون عيوبه، فهي لا تتأثر بالماء ولا تتشقق بفعل الشمس. مثالية لتزيين مداخل الفلل وخلفيات الشلالات والجلسات، وتتوفر بألوان متعددة تناسب ذوقك.',
+                heroImg: 'images/IMG-20260118-WA0023.jpg',
+                videos: ['videos/VID-20260118-WA0005.mp4', 'videos/VID-20260118-WA0035.mp4'],
+                images: ['images/IMG-20260118-WA0023.jpg', 'images/IMG-20260118-WA0037.jpg', 'images/IMG-20260118-WA0045.jpg']
+            },
+            'stone-substitute': {
+                title: 'ديكورات بديل الحجر',
+                desc: 'نوفر لك مظهر الحجر الطبيعي والرخام الفخم بوزن أخف وتكلفة أقل وسهولة أكبر في الصيانة. بديل الحجر الذي نقدمه يتميز بمقاومته العالية للظروف المناخية وسهولة تنظيفه، ويستخدم لتكسية الجدران الخارجية والداخلية ليعطي طابعاً ملكياً وقوياً للتصميم. متوفر بتشكيلات حجرية متنوعة وألوان صخرية واقعية جداً تبرز جمال التصميم المعماري.',
+                heroImg: 'images/IMG-20260118-WA0027.jpg',
+                videos: ['videos/VID-20260118-WA0053.mp4'],
+                images: ['images/IMG-20260118-WA0026.jpg', 'images/IMG-20260118-WA0027.jpg', 'images/IMG-20260118-WA0030.jpg', 'images/IMG-20260118-WA0039.jpg']
+            }
+        };
+        function loadService() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+            const data = servicesData[id];
+
+            if (data) {
+                document.title = data.title + " | حدائق العشب";
+                document.getElementById('serviceTitle').innerText = data.title;
+                document.getElementById('breadcrumbTitle').innerText = data.title;
+                document.getElementById('serviceDesc').innerText = data.desc;
+                document.getElementById('serviceHero').style.backgroundImage = `url('${data.heroImg}')`;
+
+                const videoGrid = document.getElementById('videoGrid');
+                data.videos.forEach(v => {
+                    videoGrid.innerHTML += `
+                        <div class="video-card">
+                            <video controls>
+                                <source src="${v}" type="video/mp4">
+                                متصفحك لا يدعم الفيديو.
+                            </video>
+                        </div>
+                    `;
+                });
+                const galleryGrid = document.getElementById('galleryGrid');
+                data.images.forEach(img => {
+                    galleryGrid.innerHTML += `
+                        <div class="gallery-item">
+                            <img src="${img}" alt="${data.title}">
+                        </div>
+                    `;
+                });
+
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+
+        window.onload = loadService;
+    </script>
+</body>
+</html>
