@@ -948,4 +948,47 @@ header.scrolled .logo img {
             .video-grid { grid-template-columns: 1fr; }
             .hero-content h1 { font-size: 2rem; }
         }
-  
+  @media (max-width: 992px) {
+    /* 1. إخفاء زر اتصل الآن في الموبايل */
+    .nav-btns .call-btn {
+        display: none;
+    }
+
+    /* 2. جعل اللوجو والاسم على سطر واحد */
+    .logo a {
+        flex-direction: row; /* التأكد أنهم بجانب بعض */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-text {
+        flex-direction: row; /* جعل السطرين في سطر واحد */
+        align-items: baseline;
+        gap: 5px;
+    }
+
+    .brand-name {
+        font-size: 18px; /* تصغير الخط قليلاً ليناسب السطر */
+        white-space: nowrap;
+    }
+
+    .brand-sub {
+        font-size: 14px;
+        margin-top: 0; /* إلغاء الهامش العلوي */
+    }
+
+    /* 3. تنسيق مكان الهامبرغر منيو */
+    .navbar {
+        padding: 10px 5%;
+        justify-content: space-between;
+    }
+    
+    .menu-toggle {
+        display: block;
+        order: 2; /* وضع القائمة في الآخر */
+    }
+    
+    .logo {
+        order: 1; /* وضع اللوجو في الأول */
+    }
+}
